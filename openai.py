@@ -11,7 +11,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 
-menssagem = client.responses.create(
+mensagem = client.responses.create(
     model="gpt-4.1-nano",
     instructions="Type in all caps always.",
     input=[
@@ -21,4 +21,4 @@ menssagem = client.responses.create(
 )
 
 
-print(menssagem.output_text)
+print(mensagem.output_text)
