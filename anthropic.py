@@ -10,7 +10,7 @@ client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
 
 
-message = client.messages.create(
+mensagem = client.messages.create(
     model="claude-3-haiku-20240307",
     system="Type in all caps always.",
     max_tokens=1000,
@@ -20,4 +20,4 @@ message = client.messages.create(
 )
 
 
-print(message.content[0].text)
+print(mensagem.content[0].text)
