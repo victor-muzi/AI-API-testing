@@ -6,11 +6,11 @@ import anthropic
 # Load your API key from .env file
 load_dotenv()
 
-# Create the Anthropic client
+
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
 
-# Send a message to Claude
+
 message = client.messages.create(
     model="claude-3-haiku-20240307",
     system="Type in all caps always.",
@@ -20,5 +20,5 @@ message = client.messages.create(
     ]
 )
 
-# Print Claude's response
+
 print(message.content[0].text)
