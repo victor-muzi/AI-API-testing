@@ -20,5 +20,5 @@ menssagem = client.responses.create(
     ],
 )
 
-# Print Claude's response
+
 print(menssagem.output_text)

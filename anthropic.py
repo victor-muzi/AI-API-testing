@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 import anthropic
 
 
-# Load your API key from .env file
 load_dotenv()
 
 
